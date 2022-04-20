@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Desenvolvimento em JQuery</title>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            
+            $('h1').css("color", "#f66");
+            $('h1').hide();
+            $('h1').delay("1000");
+            $('h1').fadeIn("slow")
+            $('h1').click(function () {
+                $('body').css("background", "#C30")
+                $('h1').css("color", "#fff");
+            });
+
+
+            $('a').css({ color: 'black', display: 'block' });
+            $('h1,#link3').css("border-bottom","solid 4px blue");
+        });
+
+
+        
+
+       
+    </script>
+</head>
+<body>
+
+
+    <h1>Projeto JQuery</h1>
+    <a href="#">Link 1</a>
+    <a href="#" class="link2">Link 2</a>
+    <a href="#" id="link3">Link 3</a>
+
+
+</body>
+</html>

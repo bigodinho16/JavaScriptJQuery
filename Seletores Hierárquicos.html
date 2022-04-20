@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Desenvolvimento JQuery</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('h2').css('margin', '2');
+            $('p').css({ margin: '1', color: 'blue' });
+            $('.div1').css({ 'margin-bottom': '20px', background: '#ccc' });
+            //filhas
+            $('.div1 span').hide().delay('1000').fadeIn(1000).css({ color: 'green', 'font-size': '15px' });
+            $('.div1 h2').hide().css({'font-size':'50px',color:'red'}).fadeIn(800);
+            //Filhas diretas do Elemento
+            $('.div1 > span').css({ color: 'red' });
+            // Primeiro Elemento Após o Selecionado
+            $('.p1 + p').css({ 'font-size': '25px' });
+            // Atacando todos elementos após o selecionado
+            $('.p1 ~ p').css({ 'color': 'black' });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="div1">
+        <h2> filho de DIV1</h2>
+        <p>filho de DIV1<span>Filho de P</span></p>
+        <span> Filho Direto DIV1</span>
+        </div>
+    <h2> Fora de Div1</h2>
+<p class="p1"> fora de Div1</p>
+<p>p2 fora de Div1</p>
+<p>P3 Fora de Div1</p>
+
+
+    
+
+
+</body>
+</html>
